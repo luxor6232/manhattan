@@ -1,0 +1,16 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-10 offset-lg-1">
+      <div class="bg-white rounded p-3 shadow">
+        <h1 style="text-align:center;">Formulario</h1>
+          <%= simple_form_for [@service] do |f| %>
+            <%= f.input :title, prompt: "Titulo del servicio" %>
+            <%= f.input :content,prompt: "Conexto del serivicio"%>
+            <%= f.input :price, prompt: "Valor del servicio"%>
+            <%= f.submit class: "btn btn-light" %>
+          <%end%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
