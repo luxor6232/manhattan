@@ -13,8 +13,6 @@ Rails.application.routes.draw do
   # post "/create", to: "services#create"
   # get "/show/:id", to: "services#show"
   # rutas de controlador blog_posts
-  resources :blog_posts
-
-  
+  resources :blog_posts  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
