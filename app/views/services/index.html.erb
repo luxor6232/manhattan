@@ -1,0 +1,23 @@
+<div class="container py-5">
+  <div class="col-12 col-lg-6">
+    <div class="card bg-light">
+      <%# <div class="col-12 col-md-6 offset-lg-3">
+          <div class="bg-white rounded p-3 shadow"> %>
+          <h1 style="text-align:center;">Servicios</h1>
+          <% @services.each do |service| %>
+            <div class="card">
+              <%# <img src="..." class="card-img-top" alt="..."> %>
+              <div class="card-body">
+                <h5 class="card-title"><%= service.title %></h5>
+                <p class="card-text"><%= service.content %></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted"><%= service.price %></small>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
