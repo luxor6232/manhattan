@@ -7,8 +7,14 @@
           <%= @service.content %>
           <%= @service.price %>
         </div>
-        <%= link_to "volver a la lista", service_path %> 
+        <%= link_to "volver a la lista", services_path %> 
+        <%= simple_form_for [@service, @booking] do |f| %>
+            <%= f.input :start_date %>
+            <%= f.submit class: "btn btn-light" %>
+        <% end %>
       </div>
     </div>
   </div>
 </div>
+
+

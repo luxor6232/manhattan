@@ -5,7 +5,7 @@ class BookingsController < ApplicationController
         @booking.service = @service
         @booking.user = current_user
         if @booking.save
-            redirect_to service_path(@service)
+            redirect_to services_path
         else
             render "services/show", params: { service_id: @service.id }
         end

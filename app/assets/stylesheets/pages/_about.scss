@@ -43,7 +43,7 @@ body {
     font-weight: lighter;
     opacity: 0.8;
   }
-  .container {
+  .containers {
     width: 500px;
     margin: 50px auto;
   }
@@ -60,17 +60,17 @@ body {
   
   /* Media queries */
   @media(max-width: 900px) {
-    .container {
+    .containers {
       width: 700px;
     }
   }
   @media(max-width: 750px) {
-    .container {
+    .containers {
       width: 450px;
     }
   }
   @media(max-width: 500px) {
-    .container {
+    .containers {
       width: 350px;
     }
     .banner {

@@ -1,23 +1,19 @@
-<div class="container py-5">
-  <div class="col-12 col-lg-6">
-    <div class="card bg-light">
-      <%# <div class="col-12 col-md-6 offset-lg-3">
-          <div class="bg-white rounded p-3 shadow"> %>
-          <h1 style="text-align:center;">Servicios</h1>
-          <% @services.each do |service| %>
-            <div class="card">
-              <%# <img src="..." class="card-img-top" alt="..."> %>
-              <div class="card-body">
-                <h5 class="card-title"><%= service.title %></h5>
-                <p class="card-text"><%= service.content %></p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted"><%= service.price %></small>
-              </div>
+<div class="container-s container py-5">
+  <h1 style="text-align:center;">Servicios</h1>
+  <div class="row-s">
+      <% @services.each do |service| %>
+        <div card="card-columns">
+          <div class="card-s" style="width: 20rem ">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%= service.title %></h5>
+              <p class="card-content"><%= service.content %></p>
+              <p class="card-text"><small class="text-price"> $<%= service.price %></small></p>
+                <%# <a href="#" class="btn-s btn-primary"> %>
+               <%= link_to "Reservar", service_path(service), class:"btn-s btn btn-primary-s" %>
             </div>
-          <% end %>
+          </div>
         </div>
-      </div>
-    </div>
+      <%end %>
   </div>
 </div>
