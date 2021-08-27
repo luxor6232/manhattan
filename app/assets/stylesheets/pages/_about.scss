@@ -1,4 +1,4 @@
-.banner {
+.banners {
     background-image: url(https://p4.wallpaperbetter.com/wallpaper/704/601/250/nature-scenery-images-hd-1920x1080-wallpaper-preview.jpg);
     background-size: cover;
     color: black;
@@ -11,11 +11,11 @@ body {
     font-size: 18px;
     line-height: 1.6;
     font-weight: lighter;
-    font-family: 'Lora', serif;
+
     margin: 0;
   }
   h1, h2 {
-    font-family: 'Montserrat', sans-serif;
+
     font-weight: bold;
   }
   h2 {
@@ -28,16 +28,16 @@ body {
   }
   
   /* Custom design */
-  .banner {
+  .banners {
     background-image: url("https://p4.wallpaperbetter.com/wallpaper/704/601/250/nature-scenery-images-hd-1920x1080-wallpaper-preview.jpg");
     background-size: cover;
     color: #ECF0F1;
     padding: 100px 0;
   }
-  .banner h1 {
+  .banners h1 {
     font-size: 50px;
   }
-  .banner p {
+  .banners p {
     font-size: 30px;
     font-style: italic;
     font-weight: lighter;
@@ -56,30 +56,4 @@ body {
   }
   .link-medium:hover {
     background-image: linear-gradient(to bottom, rgba(125, 255, 179, 1), rgba(125, 255, 179, 1));
-  }
-  
-  /* Media queries */
-  @media(max-width: 900px) {
-    .containers {
-      width: 700px;
-    }
-  }
-  @media(max-width: 750px) {
-    .containers {
-      width: 450px;
-    }
-  }
-  @media(max-width: 500px) {
-    .containers {
-      width: 350px;
-    }
-    .banner {
-      padding: 50px 0;
-    }
-    .banner h1 {
-      font-size: 30px;
-    }
-    .banner p {
-      font-size: 20px;
-    }
   }
