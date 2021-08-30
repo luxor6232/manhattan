@@ -2,6 +2,14 @@
 @import "home";
 @import "about";
 @import "footer";
-
 @import "service";
+@import "login";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
 
+html, body{
+  font-family: 'Open Sans', sans-serif;
+  //background-color: #F9C784;
+}
+.background-sites{
+  background-color: #F9C784;
+}
