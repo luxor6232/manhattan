@@ -4,10 +4,10 @@
       <div class="bg-white rounded p-3 shadow">
         <h1 style="text-align:center;">Formulario</h1>
           <%= simple_form_for [@service] do |f| %>
-            <%= f.input :title, prompt: "Titulo del servicio", placeholder: "Titulo del servicio" %>
-            <%= f.input :content,prompt: "Contexto del serivicio"%>
-            <%= f.input :price, prompt: "Valor del servicio"%>
-            <%= f.submit class: "btn btn-light" %>
+            <%= f.input :title, prompt: "Titulo del servicio", class:"", placeholder: "Título del servicio" %>
+            <%= f.input :content,prompt: "Contexto del serivicio", class:"", placeholder: "Ingrese su mensaje"%>
+            <%= f.input :price, prompt: "Valor del servicio", class:"", placeholder: "Valor del servicio"%>
+            <%= f.submit class: "btn btn-primary"%>
           <%end%>
         </div>
       </div>
