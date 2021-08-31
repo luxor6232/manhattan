@@ -1,5 +1,5 @@
 class BlogPostsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :new, :show]
+  skip_before_action :authenticate_user!, only: [:index, :new, :show] #hay que borrarla después de terminar vistas
 
   def index
     @blog_posts = BlogPost.all
