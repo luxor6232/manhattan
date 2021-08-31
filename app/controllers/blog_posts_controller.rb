@@ -6,9 +6,8 @@ class BlogPostsController < ApplicationController
   end
 
   def new
-    @blog_post =  BlogPost.new
+    @blog_post = BlogPost.new
   end
-
 
   def create
     @blog_post =  BlogPost.new(blog_params)
@@ -21,12 +20,11 @@ class BlogPostsController < ApplicationController
   end
 
   def show
-    @blog_post =  BlogPost.new
-  end   
+    @blog_post =  BlogPost.find(params[:id])
+  end
 
- 
   def destroy
-    @Blog_post =  BlogPost.find(params)
+    @blog_post =  BlogPost.find(params)
     @blog_post.destroy
     redirect_to blog_post_path(@blog_post.index)
   end
@@ -42,12 +40,12 @@ class BlogPostsController < ApplicationController
       redirect_to blog_post_path(@blog_post)
     else
       render :new
+    end
   end
-  
+
   private
 
   def blog_params
     params.require(:blog_post).permit(:name, :content)
   end
-end
 end
