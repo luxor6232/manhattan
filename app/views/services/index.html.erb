@@ -4,12 +4,11 @@
       <% @services.each do |service| %>
         <div card="card-columns">
           <div class="card-s" style="width: 20rem ">
-            <img src="..." class="card-img-top" alt="...">
+            <%= image_tag("", class:"card-img-top") %>
             <div class="card-body">
               <h5 class="card-title"><%= service.title %></h5>
               <p class="card-content"><%= service.content %></p>
               <p class="card-text"><small class="text-price"> $<%= service.price %></small></p>
-                <%# <a href="#" class="btn-s btn-primary"> %>
                <%= link_to "Reservar", service_path(service), class:"btn-s btn btn-primary-s" %>
             </div>
           </div>
