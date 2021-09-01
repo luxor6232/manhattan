@@ -1,9 +1,25 @@
 <div class="container-s container py-5">
   <h1 style="text-align:center;">Servicios</h1>
+  <% if current_user %>
+    <% if current_user.admin %>
+      <h6 style="text-align:center;"><%= link_to "Crear Nuevo Servicio", new_service_path%></h6>
+    <% end %>
+  <% end %>
   <div class="row-s">
       <% @services.each do |service| %>
         <div card="card-columns">
           <div class="card-s" style="width: 20rem ">
+          <% if current_user %>
+            <% if current_user.admin %>
+              <div class="d-flex justify-content-end">
+                <%= link_to "X",
+                    services_path(service.id),
+                    method: :delete,
+                    data: { confirm: "Are you sure?" }
+                %>
+              </div>
+            <% end %>
+          <% end %>
             <%= image_tag("", class:"card-img-top") %>
             <div class="card-body">
               <h5 class="card-title"><%= service.title %></h5>
