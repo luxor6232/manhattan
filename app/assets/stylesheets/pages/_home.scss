@@ -4,18 +4,25 @@ body{
 }
 .bd-placeholder-img {
   font-size: 1.125rem;
-  text-anchor: middle;
+  // text-anchor: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
 
 .backgroud-flowers{
-  background-image: url("Yellow-flowers-raindrops.jpg");
+  background-image: url("https://images.unsplash.com/photo-1545182829-56371bbdb68f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
   //opacity: 0.2;
-  background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
+  padding: 150px 0;
+  width: 100%;
+  height: auto;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.card-h{
+  
 }
 
 .title-color{
@@ -23,6 +30,7 @@ body{
 }
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
-    font-size: 3.5rem;
+    font-size: 10rem;
   }
 }
+
