@@ -1,23 +1,27 @@
-<div class="py-5 text-center container backgroud-flowers">
-  <div class="row py-lg-5">
-    <div class="col-lg-6 col-md-8 mx-auto">
-      <h1 class="fw-light title-color">BIENVENIDOS</h1>
-      <p class="lead text-muted">Sorpréndete con nuestras historias</p>
-      <p>
-        <!-- <a href="#" class="btn btn-warning my-2 btn-lg" style="width: 200px">   Blog  </a> --> 
+<div class="backgroud-flowers pt-5">
+  <div class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light title-color">BIENVENIDOS</h1>
+        <p class="lead text-muted">Sorpréndete con nuestras historias</p>
+        <p>
+          <%# <a href="#" class="btn btn-warning my-2 btn-lg" style="width: 200px">  Servicios  </a> %>
+          <%= link_to "Servicios", services_path, class:"btn btn-warning my-2 btn-lg", style:"width: 200px"%>
         
-        <!--<%= link_to 'Blog', blog_posts_path, class:"btn btn-warning my-2 btn-lg", style:"width: 200px"%>-->
-      </p>
+          <%= link_to 'Blog', blog_posts_path, class:"btn btn-warning my-2 btn-lg", style:"width: 200px"%>
+
+        </p>
+      </div>
     </div>
   </div>
 </div>
-      
+
 <div class="album py-5 bg-light">
   <div class="container">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
       
       <div class="col">
-        <div class="card shadow-sm">
+        <div class="card-h shadow-sm">
             <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="icono_rio_arriba.png" alt="">              
           <div class="card-body">
             <p class="card-text">informacion.</p>
@@ -66,13 +70,6 @@
           </div>
         </div>
       </div>
-            
-            
     </div>
   </div>
 </div>
-    
- 
-  
-
-  
