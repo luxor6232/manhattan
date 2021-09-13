@@ -13,9 +13,9 @@
             <% if current_user.admin %>
               <div class="d-flex justify-content-end">
                 <%= link_to "X",
-                    services_path(service.id),
+                    service_path(service),
                     method: :delete,
-                    data: { confirm: "Are you sure?" }
+                    data: { confirm: "¿Estás seguro?" }
                 %>
               </div>
             <% end %>

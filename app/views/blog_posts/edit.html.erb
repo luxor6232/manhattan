@@ -4,10 +4,10 @@
       <div class="bg-white rounded p-3 shadow">
         <h1 style="text-align:center;">Post</h1>
           <%= simple_form_for [@blog_post] do |f| %>
-            <%= f.input :name, prompt: "Nombre", class:"", placeholder: "Ingrese su nombre" %>
-            <%= f.input :content,prompt: "Mensaje", class:"", placeholder: "Ingrese su mensaje"%>
+            <%= f.input :name, prompt: "Nombre", class:"", placeholder: "Ingrese su nombre", label:"Título"%>
+            <%= f.input :content,prompt: "Mensaje", class:"", placeholder: "Ingrese su mensaje", label:"Mensaje"%>
             <div class="d-flex bd-highlight mt-5">
-            <%= f.submit class:"btn btn-primary mx-1 p-2 bd-highlight"%>
+            <%= f.submit class:"btn btn-primary mx-1 p-2 bd-highlight", value:"Actualizar Post"%>
             <%= link_to "Volver",blog_posts_path, class:"ml-auto p-2 bd-highlight" %>
             </div>
           <%end%>

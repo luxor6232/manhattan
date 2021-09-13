@@ -4,9 +4,9 @@
       <div class="bg-white rounded p-3 shadow">
         <h1 style="text-align:center;">Post</h1>
           <%= simple_form_for [@blog_post] do |f| %>
-            <%= f.input :name, prompt: "Nombre", class:"", placeholder: "Ingrese su nombre" %>
-            <%= f.input :content,prompt: "Mensaje", class:"", placeholder: "Ingrese su mensaje"%>
-            <%= f.submit class: "btn btn-primary"%>
+            <%= f.input :name, prompt: "Nombre", class:"", placeholder: "Ingrese su nombre", label: "Título"%>
+            <%= f.input :content,prompt: "Mensaje", class:"", placeholder: "Ingrese su mensaje", label: "Mensaje"%>
+            <%= f.submit class: "btn btn-primary", value:"Crear post"%>
           <%end%>
         </div>
       </div>

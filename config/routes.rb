@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get "/about", to: "pages#about"
   get "/contact", to: "pages#contact"
   # rutas de controlador services
-  resources :services, only: [:index, :new, :create, :show] do 
+  resources :services, only: [:index, :new, :create, :show, :destroy] do 
     resources :bookings, only: [:create]
   end
   # get "/index", to: "services#index"
