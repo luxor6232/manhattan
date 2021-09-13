@@ -1,6 +1,6 @@
 class ServicesController < ApplicationController
   #skip_before_action :authenticate_user!, only: [ :index, :new, :show ]
-  before_action :set_service, only: [:show]
+  before_action :set_service, only: [:show, :destroy]
 
   def index
     @services = Service.all
@@ -25,7 +25,6 @@ class ServicesController < ApplicationController
   end
 
   def destroy
-    @service = Service.find(params[:id])
     @service.destroy
     redirect_to services_path
   end

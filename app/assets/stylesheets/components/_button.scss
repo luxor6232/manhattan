@@ -1,5 +1,5 @@
 .button{
-  background-color: #1e63a34b; /* Green */
+  background-color: #f8f4f29a; /* Green */
   color: rgb(31, 29, 29);
   text-align: center;
   text-decoration: none;
@@ -12,13 +12,13 @@
 }
 
 .button:hover {
-   background-color: #1e63a3dc;
+   background-color: #24c99f5e;
    color: rgb(233, 233, 233);
 }
 
 
 .button:active {
-  background-color: #1e63a3dc; /* Green */
-  box-shadow: 0 5px #0000008a;
+  background-color: #25c29b83; /* Green */
+  box-shadow: 0 5px #00000060;
   transform: translateY(4px);
 }
