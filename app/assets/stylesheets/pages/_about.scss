@@ -15,8 +15,9 @@ body {
     margin: 0;
   }
   h1, h2 {
-
+    text-align:center;
     font-weight: bold;
+    text-decoration: solid;
   }
   h2 {
     color: #A0A0A0;
@@ -47,6 +48,8 @@ body {
   .containers {
     width: 500px;
     margin: 50px auto;
+    text-align: justify;
+    
   }
   .link-medium {
     background-image: linear-gradient(to bottom, rgba(233, 253, 240, 1), rgba(233, 253, 240, 1));
