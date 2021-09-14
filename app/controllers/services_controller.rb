@@ -18,7 +18,8 @@ class ServicesController < ApplicationController
   def create
     @service = Service.new(service_params)
     if @service.save
-      redirect_to service_path(@service)
+      #flash[:success] = "Successfully Submitted"
+      redirect_to service_path(@service), notice: "successfully submitted"
     else
       render :new
     end

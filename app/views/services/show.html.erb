@@ -4,14 +4,15 @@
       <div class="bg-white rounded p-3 shadow">
         <h1 style="text-align:center;"><%= @service.title %></h1>
         <%= simple_form_for [@service, @booking] do |f| %>
-          <%= f.input :start_date %>
+          <%= f.input :start_date, label:"Fecha de reserva"%>
           <%= image_tag("", class:"card-img-top") %>
           <div class="card-body">
             <%= @service.content %>
-            <%= @service.price %>
+            <br> <br>
+           $ <%= @service.price %> <p>CLP<p>
           </div>
           <div class="d-flex justify-content-between">
-            <%= f.submit class: "btn-s btn-light" %>
+            <%= f.submit class: "btn btn-primary", value:"Crear reserva"%>
             <%= link_to "volver a la lista", services_path %> 
           </div>
         <% end %>
