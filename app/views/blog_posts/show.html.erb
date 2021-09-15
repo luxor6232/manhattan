@@ -6,6 +6,9 @@
         </div>
           <div class="card-body">
             <p class="card-text"><%=@blog_post.content%></p>
+            <div class="d-flex justify-content-center">
+                <%= cl_image_tag @blog_post.photo.key, height: 300, width: 400, crop: :fill %>
+              </div><br>
             <div class="d-flex bd-highlight mt-5">
               <%= link_to "Editar", edit_blog_post_path(@blog_post), class:"btn btn-primary mx-1 p-2 bd-highlight", style:"width:10%" %>
               <%= link_to "Eliminar",

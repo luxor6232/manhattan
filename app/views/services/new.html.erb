@@ -7,6 +7,7 @@
             <%= f.input :title, prompt: "Titulo del servicio", class:"", placeholder: "Título del servicio", label:"Título" %>
             <%= f.input :content,prompt: "Contexto del serivicio", class:"", placeholder: "Ingrese su mensaje", label:"Descripción"%>
             <%= f.input :price, prompt: "Valor del servicio", class:"", placeholder: "Valor del servicio", label:"Valor"%>
+            <%= f.input :photo, as: :file %>
             <%= f.submit class: "btn btn-primary", value:"Crear servicio"%>
           <%end%>
         </div>
