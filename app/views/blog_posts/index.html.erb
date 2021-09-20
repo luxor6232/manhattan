@@ -1,18 +1,18 @@
-<div class="container">
-  <div class="row">
+<div class="container-b">
+  <div class="row-b">
      <div class="col-12 col-md-10 offset-lg-1">
-       <div class="bg white rounded p-5 shadow">
+       <div class="bg white rounded p-3 shadow">
             <h1 class="text-center" style="margin-bottom:5rem">Río Arriba Blog</h1>
-            <div class="d-flex justify-content-start">
+            <div class="d-flex justify-content-center">
               <%= link_to 'Crea tu Post', new_blog_post_path %>
             </div>
             <% @blog_posts.each do |single| %>
-            <div class="card mb-5">
-              <div class="card-header">
+            <div class="card-b mb-5">
+              <div class="card-b -header">
                 <%= single.name %>
               </div>
-              <div class="card-body">
-                <p class="card-text"><%= single.content %></p>
+              <div class="card-b body">
+                <p class="card-b-text"><%= single.content %></p>
               <div class="d-flex justify-content-center">
                 <%= cl_image_tag single.photo.key, height: 300, width: 400, crop: :fill %>
               </div><br>

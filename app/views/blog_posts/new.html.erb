@@ -6,7 +6,7 @@
           <%= simple_form_for [@blog_post] do |f| %>
             <%= f.input :name, prompt: "Nombre", class:"", placeholder: "Ingrese su nombre", label: "Título"%>
             <%= f.input :content,prompt: "Mensaje", class:"", placeholder: "Ingrese su mensaje", label: "Mensaje"%>
-            <%= f.input :photo, as: :file %>
+            <%= f.input :photo, label:"Foto", as: :file %>
             <%= f.submit class: "btn btn-primary", value:"Crear post"%>
           <%end%>
         </div>
